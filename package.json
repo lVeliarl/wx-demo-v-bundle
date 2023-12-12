@@ -1,0 +1,38 @@
+{
+  "name": "@iri/webix-demo",
+  "version": "1.0.0", 
+  "main": "dist/webix-demo.umd.js",
+  "module": "dist/webix-demo.mjs",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/webix-demo.mjs",
+      "require": "./dist/webix-demo.umd.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "start": "vite",
+    "start-test": "vitest",
+    "test": "vitest run",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": { 
+    "@xbs/webix-pro": "10.2.0",
+    "@xbs/filemanager":"10.2.0",
+    "webix-jet": "^3.0.1"
+  },
+  "devDependencies": { 
+    "@types/node": "^20.3.2",
+    "@vitest/ui": "^0.32.2",  
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^3.0.0-beta.3",
+    "vitest": "^0.32.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT"
+}

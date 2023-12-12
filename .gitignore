@@ -1,0 +1,6 @@
+**/node_modules/**
+**/tests/**
+*.lock
+**/dist/**
+*.log 
+**/distWidgets/**
