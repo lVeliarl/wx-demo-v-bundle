@@ -8,7 +8,7 @@ Execute the following command to run the project
 
 
 
-Under the src/widgets folder, a component was encapsulated using protoUI webix.ui.getapp
+Under the src/widgets folder, a component was encapsulated using protoUI webix.ui.jetapp
 
 I want this component to run independently after packaging, and currently my packaging method must introduce jet. umd. js before that
 
