@@ -1,5 +1,4 @@
 import { JetApp, JetView } from "webix-jet";
-// import "../widgets/SwitchInput";
 
 class sub extends JetView{
     config() {
@@ -47,6 +46,21 @@ class Test extends JetView{
                     }
                 },
                 {
+                    view:"switchinput1",
+                    height:60,
+                    name:"vv",
+                    showInput:{
+                    view:"text",
+                    label:"show",
+                    required:true
+                    },
+                    hiddenInput:{
+                    view:"datepicker",
+                    label:"hidden",
+                    required:true
+                    }
+                },
+                {
                     view:"button",
                     value:"show",
                     click:()=>{
@@ -54,7 +68,8 @@ class Test extends JetView{
                     }
                 },
                 {
-                    view:"filemanager"
+                    view:"filemanager",
+                    url: "https://docs.webix.com/filemanager-backend/"
                 }
             ]
           }
